@@ -1,0 +1,31 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ArtisanalInvoicerDB
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      idle-timeout: 30000
+      pool-name: HikariCP
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      properties:
+        hibernate:
+          jdbc.lob.non_contextual_creation: true
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+security:
+  basic:
+    enabled: false
+logging:
+  level:
+    org.hibernate.tool.hbm2ddl: info
+    org.hibernate.SQL: info
+    org.springframework.web: info
+    org.hibernate: info
+    org.springframework.security: debug
+
+key-jwt: 586E3272357538782F413F4428472B4B6250655368566B597033733676397924
