@@ -43,7 +43,7 @@ replay_pid*
 chrome-profiler-events*.json
 
 # IDEs and editors
-/.idea
+*/.idea
 .project
 .classpath
 .c9/
@@ -60,11 +60,11 @@ chrome-profiler-events*.json
 .history/*
 
 # misc
-/.angular/cache
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
+*/.angular/cache
+*/.sass-cache
+*/connect.lock
+*/coverage
+*/libpeerconnection.log
 npm-debug.log
 yarn-error.log
 testem.log
@@ -112,7 +112,7 @@ classes/
 hs_err_pid*
 replay_pid*
 .idea
-/target/
+*/target/
 
 # IDEA artifacts and output dirs
 *.iml
