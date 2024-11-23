@@ -14,7 +14,7 @@ const routes: Routes = [
         canActivate: [AuthGuard]
       },
       {
-        path: 'tab2',
+        path: 'tab2/:index',
         loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule),
         canActivate: [AuthGuard]
       },

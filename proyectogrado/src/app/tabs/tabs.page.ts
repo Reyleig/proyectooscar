@@ -18,4 +18,8 @@ export class TabsPage {
     console.log('Sesión cerrada');
     this.router.navigate(['/login']); // Redirigir al login
   }
+
+  redirect(){
+    this.router.navigate(['/tabs']); // Redirigir al login
+  }
 }
